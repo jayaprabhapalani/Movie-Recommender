@@ -13,7 +13,7 @@ It consists of two main files:
 - `tmdb_5000_movies.csv`
 - `tmdb_5000_credits.csv`
 
-These were merged using the `movie_id` to form a single comprehensive dataset.
+These were merged using the `title` to form a single comprehensive dataset.
 
 ---
 
