@@ -51,9 +51,10 @@ To prepare the text data for similarity comparison, the following steps were app
 
 To make the app efficient and portable, the following files were saved using `pickle`:
 
-'''python
+```python
 pickle.dump(new_df, open('movies.pkl', 'wb'))              # DataFrame with tags
 pickle.dump(new_df.to_dict(), open('movies_dict.pkl', 'wb')) # Dictionary version
 pickle.dump(similarity, open('similarity.pkl', 'wb'))       # Similarity matrix
------'''
+```
+-----
 # These files are used in the app.py file for real-time movie recommendations.
