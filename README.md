@@ -57,4 +57,4 @@ pickle.dump(new_df.to_dict(), open('movies_dict.pkl', 'wb')) # Dictionary versio
 pickle.dump(similarity, open('similarity.pkl', 'wb'))       # Similarity matrix
 ```
 -----
-# These files are used in the app.py file for real-time movie recommendations.
+###These files are used in the app.py file for real-time movie recommendations.
