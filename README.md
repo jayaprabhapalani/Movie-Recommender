@@ -57,4 +57,13 @@ pickle.dump(new_df.to_dict(), open('movies_dict.pkl', 'wb')) # Dictionary versio
 pickle.dump(similarity, open('similarity.pkl', 'wb'))       # Similarity matrix
 ```
 -----
+## 🔄 similarity.pkl File (Important)
+
+The `similarity.pkl` file used for computing movie recommendations is too large to upload to GitHub (176 MB limit is 100 MB). 
+
+👉 [Click here to download similarity.pkl](https://drive.google.com/file/d/1WLnrzDrW4nuUwZmRCyNlD8MFfXj7gUYM/view?usp=drive_link)
+
+After downloading, place it in the project root directory (same location as `app.py`).
+
+
 ###These files are used in the app.py file for real-time movie recommendations.
