@@ -50,8 +50,8 @@ drive_url = "https://drive.google.com/uc?export=download&id=1Sm-kjq-V9OXZsImCAhv
 similarity_file = "similarity.pkl"
 
 load_similarity_from_drive(drive_url, similarity_file)
-# Load similarity matrix
-similarity = pickle.load(open('similarity.pkl', 'rb'))
+# Then load the file normally
+similarity = pickle.load(open(similarity_file, 'rb'))
 
 # Streamlit UI
 st.title('Movie Recommender System 🎬')
