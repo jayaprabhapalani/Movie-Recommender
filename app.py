@@ -3,7 +3,6 @@ import pickle
 import pandas as pd
 import requests
 
-
 # Access the OMDb API key 
 OMDB_API_KEY = st.secrets["api_keys"]["omdb"]
 
@@ -38,6 +37,7 @@ def recommend(movie):
 movies_dict = pickle.load(open('movies_dict.pkl', 'rb'))
 movies = pd.DataFrame(movies_dict)
 
+
 import os
 
 def load_similarity_from_drive(url, filename):
@@ -58,6 +58,7 @@ similarity = pickle.load(open(similarity_file, 'rb'))
 # Load similarity matrix
 #similarity = pickle.load(open('similarity.pkl', 'rb'))
 
+# Streamlit UI
 st.title('Movie Recommender System 🎬')
 
 # Dropdown to select a movie
